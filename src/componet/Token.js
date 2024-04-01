@@ -28,7 +28,10 @@ export default function Tokenbox() {
   const [open, setOpen] = React.useState(false);
 
   const sendMail = async (values, action) => {
-    await axios.post("http://localhost:3001/tempId/create", values);
+    await axios.post(
+      "https://api-forge-node.onrender.com/tempId/create",
+      values
+    );
     action.resetForm();
     submitMailId();
   };
