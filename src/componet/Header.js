@@ -136,7 +136,9 @@ function Header() {
                   {page.name}
                 </MenuItem>
               ))}
-              <Tokenbox />
+              <Box sx={{ paddingRight: "10px" }}>
+                <Tokenbox />
+              </Box>
             </Menu>
           </Box>
         </Toolbar>

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import { Container } from "@mui/material";
+import { TableContainer } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "transparent",
@@ -26,10 +25,10 @@ function OutputMulti(props) {
         <Button variant="outlined" onClick={toggleOutput}>
           {`${showOutput ? "HIDE OUTPUT" : "SHOW OUTPUT"}`}
         </Button>
-        <Container fixed>
+        <TableContainer>
           <Grid
             xs={12}
-            className={`dis ${showOutput ? "show" : "hide"}`}
+            className={`${showOutput ? "show" : "hide"}`}
             container
             sx={{
               backgroundColor: "#24233b",
@@ -84,7 +83,7 @@ function OutputMulti(props) {
               </p>
             </Grid>
           </Grid>
-        </Container>
+        </TableContainer>
       </Box>
     </>
   );

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/material";
@@ -130,25 +129,6 @@ const Docspages = (props) => {
               </Item>
               <Codbox api_c={Data.link5} />
               <OutputMulti field={Data.field} />
-            </Grid>
-            <Grid item xs={12}>
-              <Item>
-                <hr className="hr" color="#8ec0f5" />
-                <Item
-                  sx={{
-                    color: "#0F3156",
-                    display: "flex",
-                    margin: "25px 0px",
-                    fontWeight: "600",
-                    fontSize: "20px",
-                  }}
-                >
-                  <span color="#0F3156">Find Data By Id</span>
-                  <button className="method b-lightBlue">GET</button>
-                </Item>
-              </Item>
-              <Codbox api_c={Data.link6} />
-              <Output field={Data.field} />
             </Grid>
           </Stack>
         </Grid>

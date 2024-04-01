@@ -192,14 +192,14 @@
   background-color: rgba(251, 255, 45, 0.5) !important;
 }
 .inputBox {
-  width: 350px;
+  width: 90%;
   margin: 12px 0px;
   border-radius: 10px;
   padding: 10px;
 }
-.css-18rdk8e-MuiContainer-root {
+/* @media .css-18rdk8e-MuiContainer-root {
   margin: 0px 0px 0px !important;
-}
+} */
 .css-zbs49c-MuiToolbar-root {
   z-index: 99 !important;
   background-color: rgb(252, 252, 252) !important;

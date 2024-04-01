@@ -43,7 +43,7 @@ const Home = () => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
-            sx={{ padding: "0px 50px" }}
+            sx={{ padding: { xs: "0px 30px", sm: "0px 50px", md: "0px 50px" } }}
           >
             <Grid
               item
@@ -55,7 +55,7 @@ const Home = () => {
                   sx={{
                     color: "#002884",
                     fontWeight: "600",
-                    fontSize: { xs: "8px", sm: "30px", md: "18px" },
+                    fontSize: { xs: "14px", sm: "15px", md: "18px" },
                     paddingBottom: "10px",
                   }}
                 >
@@ -66,7 +66,7 @@ const Home = () => {
                     margin: "0px",
                     color: "primary.dark",
                     fontWeight: "600",
-                    fontSize: { xs: "17px", sm: "30px", md: "48px" },
+                    fontSize: { xs: "25px", sm: "30px", md: "48px" },
                     padding: "20px 0px",
                     letterSpacing: "1px",
                   }}
@@ -76,7 +76,9 @@ const Home = () => {
                 <Item
                   sx={{
                     color: "grey",
-                    fontSize: { xs: "8px", sm: "12px", md: "16px" },
+                    fontSize: { xs: "12px", sm: "12px", md: "16px" },
+                    textAlign: "justify",
+                    maxWidth: { md: "90%", sm: "350px", xs: "100%" },
                   }}
                 >
                   Fake APIs can be used in educational settings to teach
@@ -98,16 +100,17 @@ const Home = () => {
                       color: "white",
                       border: "1px solid #002884",
                       borderRadius: "5px",
-                      fontSize: { xs: "8px", sm: "10px", md: "12px" },
-                      padding: { xs: "2px 5px", md: "5px 15px" },
+                      fontSize: { xs: "12px", sm: "10px", md: "12px" },
+                      padding: { xs: "5px 10px", md: "5px 15px" },
                       gap: "8px",
+                      marginTop: { xs: "20px", sm: 0 },
                     }}
                     component={Link}
                     to="/docs/"
                   >
                     Get start
                     <EastIcon
-                      sx={{ fontSize: { xs: "10px", sm: "15px", md: "16px" } }}
+                      sx={{ fontSize: { xs: "12px", sm: "15px", md: "16px" } }}
                     />
                   </Button>
                 </Item>
