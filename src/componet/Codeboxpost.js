@@ -51,19 +51,6 @@ const CodeboxPost = (props) => {
                   className="circle"
                 ></Item>
               </Stack>
-              <Item sx={{ color: "#FFFFFF", paddingLeft: "10px" }}>
-                <Button
-                  sx={{ backgroundColor: "transparent", marginLeft: "5px" }}
-                >
-                  <ContentCopyIcon
-                    sx={{
-                      margin: "0px 10px",
-                      verticalAlign: "center",
-                      fontSize: { xs: "20px" },
-                    }}
-                  />
-                </Button>
-              </Item>
             </Stack>
           </Grid>
           <Grid
