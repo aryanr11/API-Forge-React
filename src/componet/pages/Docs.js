@@ -445,7 +445,7 @@ function Docs(props) {
           sx={{
             width: { sm: drawerWidth },
             flexShrink: { sm: 0 },
-            zIndex: 1,
+            zIndex: 99,
           }}
           aria-label="mailbox folders"
         >
