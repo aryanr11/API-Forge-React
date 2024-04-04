@@ -23,7 +23,11 @@ function Output(props) {
   return (
     <>
       <Box>
-        <Button variant="outlined" onClick={toggleOutput}>
+        <Button
+          variant="outlined"
+          onClick={toggleOutput}
+          sx={{ zIndex: "-100" }}
+        >
           {`${showOutput ? "HIDE OUTPUT" : "SHOW OUTPUT"}`}
         </Button>
         <TableContainer>
