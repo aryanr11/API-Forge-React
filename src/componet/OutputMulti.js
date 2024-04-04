@@ -22,7 +22,7 @@ function OutputMulti(props) {
   return (
     <>
       <Box>
-        <Button variant="outlined" onClick={toggleOutput} sx={{ zIndex: "-100" }}>
+        <Button variant="outlined" onClick={toggleOutput}>
           {`${showOutput ? "HIDE OUTPUT" : "SHOW OUTPUT"}`}
         </Button>
         <TableContainer>

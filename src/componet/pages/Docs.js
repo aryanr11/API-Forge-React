@@ -428,6 +428,7 @@ function Docs(props) {
             background: "white",
             width: "100%",
             display: { sm: "none" },
+            zIndex: "100"
           }}
         >
           <IconButton

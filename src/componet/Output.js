@@ -26,7 +26,6 @@ function Output(props) {
         <Button
           variant="outlined"
           onClick={toggleOutput}
-          sx={{ zIndex: "-100" }}
         >
           {`${showOutput ? "HIDE OUTPUT" : "SHOW OUTPUT"}`}
         </Button>
