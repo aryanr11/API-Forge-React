@@ -33,7 +33,13 @@ const Item = styled(Paper)(() => ({
   backgroundColor: "transparent",
 }));
 
+
 const Home = () => {
+
+  const openTab = () =>{
+    window.open('https://api-test-five-teal.vercel.app/', '_blank');
+  }
+
   return (
     <>
       <ScrollToTop />
@@ -211,15 +217,10 @@ const Home = () => {
             <Box sx={{ margin: "30px 0px 0px", color: "#0F3156" }}>
               <h2>TRY &nbsp;IT....!</h2>
             </Box>
-            <Codbox api_c={"http//:cdmi.com1"} />
-            <Output
-              field={[
-                { key: "imgURL", value: "Value1" },
-                { key: "title", value: "Value2" },
-                { key: "category", value: "Value3" },
-                { key: "description", value: "Value4" },
-              ]}
-            />
+            <Codbox api_c={"https://api-forge-node.onrender.com/movie"} />
+            <Button variant="outlined" onClick={openTab}>
+                  TRY NOW
+            </Button>
           </Box>
         </Box>
       </TableContainer>
