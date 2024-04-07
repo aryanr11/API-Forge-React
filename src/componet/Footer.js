@@ -24,7 +24,7 @@ function Footer() {
       <Grid container>
         <Grid xs={12} md={4} alignItems="center">
           <Item sx={{ color: "#0F3156" }}>
-            <h2>Logo</h2>
+            <h2>API FORGE</h2>
           </Item>
           <Stack
             direction="row"
